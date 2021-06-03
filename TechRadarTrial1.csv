@@ -1,0 +1,83 @@
+name,ring,quadrant,isNew,description
+Boost in implementation,Adopt,Languages-and-Frameworks,TRUE,Boost can be used in implementation but not in interfaces. This makes integration much easier while keeps the benefits of the Boost librairies
+C++ (latest version),Adopt,Languages-and-Frameworks,TRUE,Use the latest C++ version to benefit from the language improvements.
+PyBind11,Adopt,Languages-and-Frameworks,TRUE,"pybind11 is a lightweight header-only library that exposes C++ types in Python and vice versa, mainly to create Python bindings of existing C++ code. Its goals and syntax are similar to the excellent Boost.Python library by David Abrahams: to minimize boilerplate code in traditional extension modules by inferring type information using compile-time introspection."
+Optics DSL / Columnoscope,Trial,Languages-and-Frameworks,TRUE,Creation and PoC application for a DSL to create control sw for the TEM Optics Column
+Rust,Trial,Languages-and-Frameworks,TRUE,Assess applicability of Rust programming language in TEM software ecosystem
+Sphinx RST i.c.w. Breathe,Trial,Languages-and-Frameworks,TRUE,"Investigate where it will be useful (potentials). Start with design documentation, perhaps later interface docs. For potential documentation."
+SkyDL,Trial,Languages-and-Frameworks,TRUE,Interface definition language for the Sky components.
+SysML,Assess,Languages-and-Frameworks,TRUE,"System Modelling languages, supported by MDSE tools like Capella."
+Cuda,Assess,Languages-and-Frameworks,TRUE,Programming the GPU
+Cucumber,Assess,Languages-and-Frameworks,TRUE,"Cucumber Open is the world’s leading tool for BDD. Work faster and smarter than your competition by supporting a team-centric, cross-functional workflow."
+Matlab,Hold,Languages-and-Frameworks,TRUE,For modelling controllers and generation code.
+GO,Hold,Languages-and-Frameworks,TRUE,"Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+Delphi (Pascal),Hold,Languages-and-Frameworks,TRUE,"Pascal is an imperative and procedural programming language, designed by Niklaus Wirth as a small, efficient language intended to encourage good programming practices using structured programming and data structuring. Delphi is the programming environment that supports development in Pascal."
+Grafana,Trial,Platforms,TRUE,"Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored. Create, explore, and share dashboards with your team and foster a data driven culture."
+"Elastic Stack (Elasticsearch, Kibana, Beats and Logstash)",Trial,Platforms,TRUE,"That's Elasticsearch, Kibana, Beats, and Logstash (also known as the ELK Stack). Reliably and securely take data from any source, in any format, then search, analyze, and visualize it in real time."
+Docker,Trial,Platforms,TRUE,"A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings."
+Kafka Monitoring,Assess,Platforms,TRUE,"Kafka monitoring tools like Applications Manager's Kafka monitoring tool collects all performance metrics that can help when troubleshooting Kafka issues, and it shows you which ones require corrective action."
+Apache Kafka,Assess,Platforms,TRUE,"Apache Kafka is an open-source, fault-tolerant distributed event streaming platform developed by LinkedIn. A distributed log service, Kafka is often used in place of traditional message brokers due to its higher throughput, scalability, reliability, and replication."
+Kubernetes,Assess,Platforms,TRUE,Runtime environment technology to seperate execution of different processes; Kubernetes has become the standard orchestration platform for containers.
+Helm,Assess,Platforms,TRUE,The package manager for Kubernetes
+VMWare,Assess,Platforms,TRUE,Virtualization technology from VMWare
+Hyper-V,Assess,Platforms,TRUE,Virtualization technology from Microsoft
+WEbAssembly,Assess,Platforms,TRUE,
+DataServices,Assess,Platforms,TRUE,Proprietary TFS technology for logging system events.
+Apigee,Assess,Platforms,TRUE,"Apigee is the platform for all of an enterprise’s API initiatives, whether enabling agility and speed for internal or external developers, powering external experiences, or connecting internal applications and systems."
+Windows Server 2016 / 2019,Hold,Platforms,TRUE,Operating system - maybe interesting to leverage the resource management capabilities
+Centos 7,Hold,Platforms,TRUE,Flavour of Redhat
+Amazon webservices,Hold,Platforms,TRUE,Hosting environment for cloud applications from Amazon.
+Ansible 2.10,Hold,Platforms,TRUE,"Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates."
+Thermofisher Cloud,Hold,Platforms,TRUE,
+Postgress,Hold,Platforms,TRUE,
+non SQL databases,Hold,Platforms,TRUE,
+Mulesoft,Hold,Platforms,TRUE,
+Unify logging,Adopt,Techniques,TRUE,Unifying logging / UEC / HM / etc via ELK. Info -> ELK; Present in K; optional ELK -> DS (if not started by Sky)
+Capability based interfaces,Adopt,Techniques,TRUE,"Impact camera capabilities on legacy apps: TIA, PeoUI, Scripting, etc (list to be defined)"
+Trace Analysis,Trial,Techniques,TRUE,System for automatic tracing of the execution paths
+Dependency injection,Trial,Techniques,TRUE,Create PoC for brick-level dependency injection for TEM Server
+Feasibility TEM Server SW deployment split,Trial,Techniques,TRUE,Split TEM Server in 2 processes: Vacuum / Gun and the rest. Host them in docker images for fast deployment.
+Eventsystem using gRPC and ETCD,Trial,Techniques,TRUE,"(i.s.o. RabbitMQ) ETCD for addressing & gRPC for transport, Infra API-compatible"
+Subystems as one brick,Trial,Techniques,TRUE,To provide a complete system as one brick instead of multiple. First candidate is Vacuum.
+Monitoring performance metrics,Trial,Techniques,TRUE,"Define performance metrics relevant for components within IAD, implement the mechanism, monitoring trends (extract relevant content from smoke tests), dashboard/mail in case of deterioation."
+Standardize smoke test infrastructure,Trial,Techniques,TRUE,Investigate & implement a standardized and maintainable smoke test infrastructure (scripting is part of this)
+Digital Twins for SQA,Trial,Techniques,TRUE,Digital Twin as the glue to simulate realistic behaviour of a (sub)system.
+Code stereotyping,Assess,Techniques,TRUE,Classify classess according predefined stereotypes to support refactoring
+AI for code review,Assess,Techniques,TRUE,Finding lines of code that require review using AI
+SKY,Assess,Techniques,TRUE,"Apply Sky framework to a TEM microservice: Separate ETCD server, use SkyDL for service, adapt bootstrap code and use Sky’s service control."
+Simulator generator,Assess,Techniques,TRUE,Generate SCU-simulator using actual firmware code
+Transparent remote live experiment data access (not using COM),Assess,Techniques,TRUE,Unlock the datastream to other apps deployed on other PCs
+Transparent remote live system (metadata) access (not using COM),Assess,Techniques,TRUE,Unlock the system state to other apps deployed on other PCs
+Ability to efficiently search through ALL code-archives,Assess,Techniques,TRUE,"OpenGrok, Neo4J?"
+Message brokering / MessageMQ,Assess,Techniques,TRUE,"In computer science, message queues and mailboxes are software-engineering components typically used for inter-process communication (IPC), or for inter-thread communication within the same process. They use a queue for messaging – the passing of control or of content. Group communication systems provide similar kinds of functionality."
+API management tools,Assess,Techniques,TRUE,
+Interface version management,Assess,Techniques,TRUE,
+Dispatcher to address concurrency (message queue),Assess,Techniques,TRUE,
+Orchestration for microservices,Assess,Techniques,TRUE,
+Conan,Adopt,Tools,TRUE,Package manager for C++ projects
+Anaconda,Adopt,Tools,TRUE,Package manager for Python projects
+ComMA,Adopt,Tools,TRUE,Interface modelling tool
+IAR Workbench,Adopt,Tools,TRUE,Firmware development environment
+Genesis IOM Wrapper Code,Adopt,Tools,TRUE,
+gcc,Adopt,Tools,TRUE,Maybe used for cross platform new code
+Axini,Adopt,Tools,TRUE,To assess whether Axini can be used for test case generation in TEM
+Resharper for C++,Trial,Tools,TRUE,It is there but have people used it?
+Cmake,Assess,Tools,TRUE,"For internal dependency mgmt, build, installer?"
+CodeScene,Assess,Tools,TRUE,Assess whether CodeScene can help identify architectural and team coupling hot spots.
+Prespective,Assess,Tools,TRUE,Digital Twin engine
+clang,Assess,Tools,TRUE,
+Eclipse CDT C/C++,Assess,Tools,TRUE,
+Specflow,Assess,Tools,TRUE,Testing
+Pure Systems,Assess,Tools,TRUE,Variability management
+Blue Optima,Assess,Tools,TRUE,Software Engineering Efficiency
+TestRail,Assess,Tools,TRUE,
+Sequila,Assess,Tools,TRUE,
+TBricks,Assess,Tools,TRUE,Infrastructure created by TFS itself
+Gherkin,Assess,Tools,TRUE,
+EPD,Hold,Tools,TRUE,Enthought Python
+LSP,Hold,Tools,TRUE,Allows to integrate easily extension into VS
+Lattix,Hold,Tools,TRUE,To assess whether this tool is useful to manage our code structure and dependencies
+Axivion,Hold,Tools,TRUE,
+Honeycomb,Hold,Tools,TRUE,Observability
+Bear Inspector,Hold,Tools,TRUE,
+Selenium,Hold,Tools,TRUE,Test automation for webservices and applications
